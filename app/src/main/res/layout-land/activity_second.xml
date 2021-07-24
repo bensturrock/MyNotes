@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFACF"
+    tools:context=".second_activity">
+
+    <Button
+        android:id="@+id/activity_second_clear_desc"
+        android:layout_width="55dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="196dp"
+        android:layout_marginBottom="55dp"
+        android:backgroundTint="#000000"
+        app:icon="@drawable/ic_baseline_highlight_off_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.522" />
+
+    <TextView
+        android:id="@+id/received_value_desc"
+        android:layout_width="221dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/blank_space"
+        android:textColor="@color/black"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/received_value_id" />
+
+    <Button
+        android:id="@+id/activity_second_clear_title"
+        android:layout_width="55dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="55dp"
+        android:backgroundTint="#000000"
+        app:icon="@drawable/ic_baseline_highlight_off_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.216" />
+
+    <TextView
+        android:id="@+id/received_value_id"
+        android:layout_width="221dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/blank_space"
+        android:textColor="@color/black"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/activity_second_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:backgroundTint="#FFD15F5F"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/activity_second_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#5FB6D1"
+        android:onClick="saveNote"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="@+id/activity_second_load"
+        app:layout_constraintTop_toBottomOf="@+id/activity_second_load" />
+
+    <Button
+        android:id="@+id/activity_second_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5FB6D1"
+        android:onClick="loadNote"
+        android:text="Load"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.705" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

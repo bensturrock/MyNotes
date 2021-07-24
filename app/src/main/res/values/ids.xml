@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="send_button_id" type="id" />
+    <item name="send_text_id" type="id" />
+    <item name="rlVar1" type="id" />
+</resources>

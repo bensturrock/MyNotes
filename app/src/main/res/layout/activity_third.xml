@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlVar1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".third_activity">
+
+    <TextView
+        android:id="@+id/lbl_activity_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:text="@string/which_colour_would_you_like"
+        android:textColor="#424242"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_activity_third"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/background_button_red"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/red"
+            android:padding="20dp"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/background_button_reset"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:backgroundTint="@color/white"
+            android:padding="13.904dp"
+            android:text="@string/reset"
+            android:textColor="#424242"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/background_button_blue"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:padding="20dp"
+            style="?android:attr/buttonBarButtonStyle" />
+
+    </LinearLayout>
+</RelativeLayout>
